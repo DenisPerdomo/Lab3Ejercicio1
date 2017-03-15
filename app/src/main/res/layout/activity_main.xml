@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.denis.lab3ejercicio1.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:text="Finalizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btfin"
+                    android:onClick="finalizar" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/et1" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:text="Ciclo de Vida:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtciclovida"
+            android:paddingTop="30dp" />
+
+        <TextView
+            android:text="1. Al iniciar la actividad se lanzan los métodos onCreate, onStart y onResume."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="2. Si haces click en el botón Atrás se lanzan los métodos: onPause, onStop y onDestroy."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="3.Cuando se pulsa Finalizar se lanza los métodos onPause, onStop, onDestroy."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt3"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt4"
+            android:paddingTop="10dp"
+            android:text="4. Al hacer click en Home se lanzan los métodos onPause y onStop." />
+
+        <TextView
+            android:text="5. Si volvemos a lanzar la actividad en espera se lanzan los métodos: onRestart, onStart, y onResume."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt5"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="6. Si giras la pantalla el valor del EditText se conservará si este tiene asignado un ID o si se guarda su estado."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt6"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+</RelativeLayout>
